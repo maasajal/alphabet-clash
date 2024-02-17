@@ -44,7 +44,12 @@
               </p>
             </div>
             <div class="flex justify-center items-center h-full">
-              <p id="current-alphabet" class="text-black text-9xl font-bold uppercase">Y</p>
+              <p
+                id="current-alphabet"
+                class="text-black text-9xl font-bold uppercase"
+              >
+                Y
+              </p>
             </div>
           </div>
           <!-- Keyboard -->
@@ -89,14 +94,14 @@
             >
               Life
               <img src="images/heart.png" alt="" />
-              <span>1</span>
+              <span id="current-life">5</span>
             </button>
             <button
               class="btn rounded-full bg-[#360490] text-white px-4 border-none"
             >
               Score
               <img src="images/dollar.png" alt="" />
-              <span>1</span>
+              <span id="initial-score">0</span>
             </button>
           </div>
         </div>
@@ -104,15 +109,18 @@
       <!-- Playground end -->
       <!-- Score screen -->
       <section
-        class="score flex justify-center items-center min-h-screen hidden"
+        id="score"
+        class="flex justify-center items-center min-h-screen hidden"
       >
         <div
           class="text-white text-center space-y-4 bg-[#FFFFFF33] p-8 rounded-lg"
         >
+          <h2 class="text-3xl">Game Over!</h2>
           <h1 class="text-8xl">
-            <span class="font-extrabold">Score : </span> <span>14</span>
+            <span class="font-extrabold">Score : </span>
+            <span id="final-score">14</span>
           </h1>
-          <button class="btn">Play Again</button>
+          <button onclick="play()" class="btn">Play Again</button>
           <p>Practice will make you a Pro</p>
         </div>
       </section>
